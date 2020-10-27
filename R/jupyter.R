@@ -124,7 +124,7 @@ ipynb_yaml <- function(meta, input) {
   # default title and output format
   res <- list(
     title = paste0('An R Markdown document converted from "', input, '"'),
-    output = 'html_document'
+    output = 'html_notebook'
   )
   # currently only the `authors` field is supported
   authors <- unlist(lapply(meta$authors, `[[`, 'name'))
